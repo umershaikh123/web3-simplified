@@ -33,12 +33,14 @@ export const Header = ({
         width={150}
         height={150}
         alt="logo"
-        className="absolute  top-10 right-10  "
+        className="absolute  top-10 min-[900px]:right-10 min-[900px]:flex hidden  "
       />
       <h1 className="text-6xl font-bold text-center text-[var(--primary)]">
         {title}
       </h1>
-      <p className="text-[var(--secondary)] text-4xl font-light">{subtitle}</p>
+      <p className="text-[var(--secondary)] min-[900px]:text-4xl text-xl font-light">
+        {subtitle}
+      </p>
     </div>
   )
 }

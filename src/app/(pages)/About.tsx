@@ -9,8 +9,8 @@ const About = () => {
         subtitle="Unlocking the Human Side of the Decentralized Web"
       />
 
-      <div className="w-full flex">
-        <div className="bg-white px-4 py-24 items-center justify-center flex flex-col w-1/2 space-y-4">
+      <div className="w-full min-[900px]:flex-row flex flex-col">
+        <div className="bg-white px-4 py-24 items-center justify-center flex flex-col min-[900px]:w-1/2 w-full space-y-4">
           <h1 className="text-[var(--primary)] text-7xl  font-semibold">
             What we do?
           </h1>
@@ -21,7 +21,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col min-[900px]:w-1/2 w-full">
           <div className="bg-[var(--primary)] text-[var(--background)] px-4 py-24 flex flex-col items-center justify-center space-y-4">
             <h1 className="text-7xl  font-semibold">Our Mission</h1>
             <p className="font-semibold text-2xl px-16 text-center">
