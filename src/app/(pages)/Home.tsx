@@ -25,7 +25,7 @@ export default function HomePage() {
           width={300}
           height={300}
           alt="logo"
-          className="absolute  bottom-0 left-10"
+          className="absolute  bottom-0 left-10 min-[950px]:flex hidden"
         />
 
         <Image
@@ -33,7 +33,7 @@ export default function HomePage() {
           width={300}
           height={300}
           alt="logo"
-          className="absolute  top-0 right-10"
+          className="absolute  top-0 right-10 min-[950px]:flex hidden"
         />
       </div>
     </div>
