@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 const About = () => {
   return (
-    <div className="h-[100vh] overflow-clip">
+    <div className="h-[100vh] overflow-x-clip">
       <Header
         title="About us"
         subtitle="Unlocking the Human Side of the Decentralized Web"
