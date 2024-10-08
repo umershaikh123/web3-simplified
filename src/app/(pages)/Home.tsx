@@ -7,7 +7,7 @@ import effect2 from "/public/effect2.png"
 import Heading from "@/components/ui/Heading"
 import { SubHeading } from "@/components/ui/Heading"
 import { motion } from "framer-motion"
-
+import { ParabolaAnimation } from "@/components/Animations"
 export default function HomePage() {
   return (
     <div className="min-h-[85vh] mt-4 relative overflow-clip">
@@ -38,7 +38,14 @@ export default function HomePage() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
           className="absolute bottom-0 left-10 min-[950px]:flex hidden"
         >
-          <Image src={effect1} width={300} height={300} alt="effect1" />
+          <ParabolaAnimation css="absolute bottom-0" />
+          <Image
+            src={effect1}
+            width={300}
+            height={300}
+            alt="effect1"
+            className=""
+          />
         </motion.div>
 
         <motion.div
