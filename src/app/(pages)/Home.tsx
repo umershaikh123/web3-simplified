@@ -10,8 +10,8 @@ import { motion } from "framer-motion"
 import { ParabolaAnimation, TriangleAnimation } from "@/components/Animations"
 export default function HomePage() {
   return (
-    <div className="min-h-[85vh] mt-4 relative overflow-clip">
-      <div className="flex flex-col items-center min-h-[70vh]">
+    <div className="h-full  md:py-16 mb-16  relative overflow-clip" id="home">
+      <div className="flex flex-col items-center min-h-[80vh] justify-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -36,7 +36,7 @@ export default function HomePage() {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-          className="absolute bottom-0 left-10 min-[950px]:flex hidden"
+          className="absolute bottom-0 left-10 min-[1100px]:flex hidden"
         >
           <ParabolaAnimation css="absolute bottom-0" />
           <Image
@@ -52,9 +52,9 @@ export default function HomePage() {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-          className="absolute top-0 right-10 min-[950px]:flex hidden"
+          className="absolute top-0 right-10 min-[1100px]:flex hidden"
         >
-          <TriangleAnimation css="absolute right-1 top-[138px]" />
+          <TriangleAnimation css="absolute right-1 top-[135px]" />
           <Image src={effect2} width={270} height={270} alt="effect2" />
         </motion.div>
       </div>
