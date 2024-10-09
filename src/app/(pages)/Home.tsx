@@ -10,8 +10,8 @@ import { motion } from "framer-motion"
 import { ParabolaAnimation, TriangleAnimation } from "@/components/Animations"
 export default function HomePage() {
   return (
-    <div className="h-full md:py-16  relative overflow-clip" id="home">
-      <div className="flex flex-col items-center min-h-[70vh]">
+    <div className="h-full  md:py-16 mb-16  relative overflow-clip" id="home">
+      <div className="flex flex-col items-center min-h-[80vh] justify-center">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
