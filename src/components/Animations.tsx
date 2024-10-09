@@ -5,6 +5,8 @@ import leftPattern from "/public/half_circle.svg"
 import rightPattern from "/public/other_half.svg"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import whiteTraingle from "/public/triangle_white.svg"
+import OrangeTraingle from "/public/triangle_orange.svg"
 
 const leftPatternVariants = {
   hidden: {
@@ -105,6 +107,85 @@ export const ParabolaAnimation = ({ css }: { css?: string }) => {
             alt="circle pattern"
             className="-mb-11"
           />
+        </motion.div>
+      </div>
+    </div>
+  )
+}
+
+const triangleVariants = {
+  hidden: {
+    y: 0,
+  },
+  visible: {
+    y: -125,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatDelay: 1,
+    },
+  },
+}
+
+export const TriangleAnimation = ({ css }: { css?: string }) => {
+  return (
+    <div className={`flex flex-col items-center justify-center h-fit ${css}`}>
+      <div className="w-[130px] h-[140px] bg-[var(--primary)] overflow-hidden flex relative justify-center">
+        <motion.div
+          className="absolute top-0 flex flex-col"
+          initial="hidden"
+          animate="visible"
+        >
+          {/* Each triangle moves independently */}
+          <motion.div variants={triangleVariants}>
+            <Image
+              src={whiteTraingle}
+              width={150}
+              height={150}
+              alt="triangle"
+            />
+          </motion.div>
+          <motion.div variants={triangleVariants}>
+            <Image
+              src={OrangeTraingle}
+              width={150}
+              height={150}
+              alt="triangle"
+            />
+          </motion.div>
+          <motion.div variants={triangleVariants}>
+            <Image
+              src={whiteTraingle}
+              width={150}
+              height={150}
+              alt="triangle"
+            />
+          </motion.div>
+          <motion.div variants={triangleVariants}>
+            <Image
+              src={OrangeTraingle}
+              width={150}
+              height={150}
+              alt="triangle"
+            />
+          </motion.div>
+          <motion.div variants={triangleVariants}>
+            <Image
+              src={whiteTraingle}
+              width={150}
+              height={150}
+              alt="triangle"
+            />
+          </motion.div>
+          <motion.div variants={triangleVariants}>
+            <Image
+              src={OrangeTraingle}
+              width={150}
+              height={150}
+              alt="triangle"
+            />
+          </motion.div>
         </motion.div>
       </div>
     </div>

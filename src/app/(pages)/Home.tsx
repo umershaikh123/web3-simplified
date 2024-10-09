@@ -7,7 +7,7 @@ import effect2 from "/public/effect2.png"
 import Heading from "@/components/ui/Heading"
 import { SubHeading } from "@/components/ui/Heading"
 import { motion } from "framer-motion"
-import { ParabolaAnimation } from "@/components/Animations"
+import { ParabolaAnimation, TriangleAnimation } from "@/components/Animations"
 export default function HomePage() {
   return (
     <div className="min-h-[85vh] mt-4 relative overflow-clip">
@@ -54,7 +54,8 @@ export default function HomePage() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
           className="absolute top-0 right-10 min-[950px]:flex hidden"
         >
-          <Image src={effect2} width={300} height={300} alt="effect2" />
+          <TriangleAnimation css="absolute right-1 top-[138px]" />
+          <Image src={effect2} width={270} height={270} alt="effect2" />
         </motion.div>
       </div>
     </div>
