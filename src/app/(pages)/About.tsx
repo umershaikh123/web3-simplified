@@ -23,10 +23,10 @@ const About = () => {
           className="bg-white px-4 py-10 items-center justify-center flex flex-col min-[900px]:w-1/2 w-full space-y-4"
           id="section1"
         >
-          <h1 className="text-[var(--primary)] text-6xl  font-semibold">
+          <h1 className="text-[var(--primary)] md:text-6xl text-4xl  font-semibold">
             What we do?
           </h1>
-          <p className="text-[var(--background)] font-semibold text-2xl px-16 text-center">
+          <p className="text-[var(--background)] font-semibold md:text-2xl md:px-16 px-4 text-xl text-center">
             At Web3 Simplified, we translate complex concepts into relatable,
             real-world scenarios, exploring how Web3 impacts creativity,
             ownership, privacy, and connection.
@@ -42,8 +42,8 @@ const About = () => {
             className="bg-[var(--primary)] text-[var(--background)] px-4 py-10 flex flex-col items-center justify-center space-y-4"
             id="section2"
           >
-            <h1 className="text-6xl  font-semibold">Our Mission</h1>
-            <p className="font-semibold text-2xl px-16 text-center">
+            <h1 className="md:text-6xl text-4xl  font-semibold">Our Mission</h1>
+            <p className="font-semibold md:text-2xl md:px-16 px-4 text-xl text-center">
               To reveal the real-world impact and opportunities of Web3 for
               everyone, regardless of technical expertise.
             </p>
@@ -57,8 +57,8 @@ const About = () => {
             className="bg-[var(--background)] text-white px-4 py-10 flex flex-col items-center justify-center space-y-4  border-b border-white"
             id="section3"
           >
-            <h1 className="text-6xl  font-semibold">Join Us</h1>
-            <p className="font-semibold text-2xl px-16 text-center">
+            <h1 className="md:text-6xl text-4xl  font-semibold">Join Us</h1>
+            <p className="font-semibold md:text-2xl md:px-16 px-4 text-xl text-center">
               To discover how Web3 could create new opportunities and reshape
               industries – no coding skills required.
             </p>

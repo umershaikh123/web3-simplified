@@ -8,7 +8,7 @@ const Heading = ({ text, css }: { text: string; css?: string }) => {
       initial={{ opacity: 0, scale: 1.2 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-      className={`text-8xl font-bold text-center text-[var(--primary)] max-w-[30rem] ${css}`}
+      className={`md:text-8xl text-6xl max-w-[20rem] font-bold text-center text-[var(--primary)] md:max-w-[30rem] ${css}`}
     >
       {text}
     </motion.div>
@@ -21,7 +21,7 @@ export const SubHeading = ({ text }: { text: string }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-      className="text-4xl text-center text-[var(--secondary)] font-normal mt-6"
+      className="md:text-4xl text-3xl text-center text-[var(--secondary)] font-normal mt-6"
     >
       {text}
     </motion.div>
@@ -60,7 +60,7 @@ export const Header = ({
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-        className="text-[var(--secondary)] min-[900px]:text-4xl text-xl font-light"
+        className="text-[var(--secondary)] min-[900px]:text-4xl text-xl text-center  font-light"
       >
         {subtitle}
       </motion.p>

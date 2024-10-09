@@ -28,7 +28,7 @@ const footerVariants = {
 export default function Footer() {
   return (
     <motion.div
-      className="flex justify-between px-16 items-center py-12"
+      className="flex sm:flex-row flex-col justify-between px-16 items-center py-12"
       id="contact"
       initial="hidden"
       whileInView="visible"
@@ -38,12 +38,12 @@ export default function Footer() {
       <div className="flex  items-center">
         <Image src={logo} width={100} height={100} alt="logo" />
 
-        <h1 className="text-[var(--primary)] text-2xl -ml-2  font-semibold">
+        <h1 className="text-[var(--primary)] md:text-2xl text-xl -ml-2  font-semibold">
           web3 simplified
         </h1>
       </div>
 
-      <div className=" flex     space-x-4 ">
+      <div className=" flex space-x-4  items-center md:ml-0 ml-7 ">
         <Link
           href={"mailto:web3simplifiedinfo@gmail.com"}
           target="_blank"

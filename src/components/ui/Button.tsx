@@ -20,7 +20,7 @@ export const LinkButton = ({
   return (
     <motion.div variants={linkButtonVariants}>
       <Link href={href} onClick={handleClick}>
-        <button className="bg-[var(--primary)] px-10  rounded-3xl py-2 text-[var(--background)] font-semibold hover:bg-[var(--background)] hover:text-[var(--primary)] border-2 border-[var(--primary)] duration-300 ease-in-out">
+        <button className="bg-[var(--primary)] md:px-10 px-6  rounded-3xl py-2 text-[var(--background)] font-semibold hover:bg-[var(--background)] hover:text-[var(--primary)] border-2 border-[var(--primary)] duration-300 ease-in-out">
           {text}
         </button>
       </Link>
