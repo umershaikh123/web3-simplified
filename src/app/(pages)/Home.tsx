@@ -54,7 +54,7 @@ export default function HomePage() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
           className="absolute top-0 right-10 min-[950px]:flex hidden"
         >
-          <TriangleAnimation css="absolute right-1 top-[138px]" />
+          <TriangleAnimation css="absolute right-1 top-[135px]" />
           <Image src={effect2} width={270} height={270} alt="effect2" />
         </motion.div>
       </div>
