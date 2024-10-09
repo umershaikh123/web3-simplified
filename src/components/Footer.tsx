@@ -1,18 +1,39 @@
+"use client"
 import React from "react"
 
 import Link from "next/link"
 import EmailIcon from "@mui/icons-material/Email"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import XIcon from "@mui/icons-material/X"
-import LanguageIcon from "@mui/icons-material/Language"
 import Image from "next/image"
 import logo from "/public/logo.png"
 import mediumLogo from "/public/medium.png"
+import { motion } from "framer-motion"
+
+const footerVariants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+    },
+  },
+}
+
 export default function Footer() {
   return (
-    <div
-      className={` flex  justify-between px-16 items-center py-12 `}
+    <motion.div
+      className="flex justify-between px-16 items-center py-12"
       id="contact"
+      initial="hidden"
+      whileInView="visible"
+      variants={footerVariants}
+      viewport={{ once: true, amount: 0.2 }}
     >
       <div className="flex  items-center">
         <Image src={logo} width={100} height={100} alt="logo" />
@@ -57,6 +78,6 @@ export default function Footer() {
           />
         </Link>
       </div>
-    </div>
+    </motion.div>
   )
 }
