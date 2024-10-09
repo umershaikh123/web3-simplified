@@ -23,11 +23,22 @@ const Navbar = () => {
       variants={containerVariants}
       className="flex md:px-16 space-x-8 items-center w-full justify-start"
     >
-      <LinkButton text="Home" href="" />
-      <LinkButton text="About" href="" />
-      <LinkButton text="Contact" href="" />
+      <LinkButton text="Home" href="" handleClick={() => scrollTo("home")} />
+      <LinkButton text="About" href="" handleClick={() => scrollTo("about")} />
+      <LinkButton
+        text="Contact"
+        href=""
+        handleClick={() => scrollTo("contact")}
+      />
     </motion.div>
   )
+}
+
+function scrollTo(sectionId: string) {
+  const section = document.getElementById(sectionId)
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" })
+  }
 }
 
 export default Navbar

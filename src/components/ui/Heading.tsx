@@ -36,7 +36,7 @@ export const Header = ({
   subtitle: string
 }) => {
   return (
-    <div className="flex flex-col py-16 w-full justify-center items-center space-y-4 relative">
+    <div className="flex flex-col py-8 w-full justify-center items-center space-y-4 relative">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}

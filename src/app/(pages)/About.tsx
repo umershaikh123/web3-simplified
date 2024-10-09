@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 const About = () => {
   return (
-    <div className="h-full overflow-x-clip">
+    <div className="h-full overflow-x-clip" id="about">
       <Header
         title="About us"
         subtitle="Unlocking the Human Side of the Decentralized Web"
@@ -54,7 +54,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="bg-[var(--background)] text-white px-4 py-10 flex flex-col items-center justify-center space-y-4"
+            className="bg-[var(--background)] text-white px-4 py-10 flex flex-col items-center justify-center space-y-4  border-b border-white"
             id="section3"
           >
             <h1 className="text-6xl  font-semibold">Join Us</h1>
