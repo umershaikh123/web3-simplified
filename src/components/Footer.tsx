@@ -44,28 +44,28 @@ export default function Footer() {
       </div>
 
       <div className=" flex     space-x-4 ">
-        <Link href={"mailto:web3simplifiedinfo@gmail.com"} target="_blank">
-          <EmailIcon
-            sx={{ color: "var(--secondary)", fontSize: 40 }}
-            className="hover:scale-110 transition duration-300 ease-in-out"
-          />
+        <Link
+          href={"mailto:web3simplifiedinfo@gmail.com"}
+          target="_blank"
+          className="hover:scale-110 transition duration-300 ease-in-out"
+        >
+          <EmailIcon sx={{ color: "var(--secondary)", fontSize: 40 }} />
         </Link>
 
         <Link
           href={"https://www.linkedin.com/in/garima-yadav-4027823b/"}
           target="_blank"
+          className="hover:scale-110 transition duration-300 ease-in-out"
         >
-          <LinkedInIcon
-            sx={{ color: "var(--secondary)", fontSize: 40 }}
-            className="hover:scale-110 transition duration-300 ease-in-out"
-          />
+          <LinkedInIcon sx={{ color: "var(--secondary)", fontSize: 40 }} />
         </Link>
 
-        <Link href={"https://x.com/web3simplifiedx"} target="_blank">
-          <XIcon
-            sx={{ color: "var(--secondary)", fontSize: 40 }}
-            className="hover:scale-110 transition duration-300 ease-in-out"
-          />
+        <Link
+          href={"https://x.com/web3simplifiedx"}
+          target="_blank"
+          className="hover:scale-110 transition duration-300 ease-in-out"
+        >
+          <XIcon sx={{ color: "var(--secondary)", fontSize: 40 }} />
         </Link>
 
         <Link href={"https://medium.com/@garimayadav_20887"} target="_blank">
