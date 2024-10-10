@@ -11,11 +11,11 @@ import { ParabolaAnimation, TriangleAnimation } from "@/components/Animations"
 export default function HomePage() {
   return (
     <div
-      className="h-[85vh]  max-h-[60rem]  mt-4 mb-16  flex  justify-center  overflow-clip "
+      className="md:h-[90vh]  h-full   mt-4     flex  justify-center   items-center overflow-clip "
       id="home"
     >
-      <div className=" w-full h-full max-h-[50rem] max-w-[100rem] relative">
-        <div className="flex flex-col items-center min-h-[70vh]  ">
+      <div className=" w-full h-[70vh]  max-w-[95rem] relative ">
+        <div className="flex flex-col items-center lg:-mt-16   min-h-[74vh]  ">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -35,18 +35,18 @@ export default function HomePage() {
           <SubHeading text="It's About People, Not Just Tech" />
         </div>
 
-        <div className="flex justify-between w-full">
+        <div className="flex justify-between w-full ">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-            className="absolute bottom-0 left-10 min-[1100px]:flex hidden"
+            className="absolute top-0 left-10 min-[1100px]:flex hidden"
           >
             <ParabolaAnimation css="absolute bottom-0" />
             <Image
               src={effect1}
-              width={300}
-              height={300}
+              width={270}
+              height={270}
               alt="effect1"
               className=""
             />
