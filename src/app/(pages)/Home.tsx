@@ -11,11 +11,11 @@ import { ParabolaAnimation, TriangleAnimation } from "@/components/Animations"
 export default function HomePage() {
   return (
     <div
-      className="md:h-[90vh]  h-full   mt-4     flex  justify-center   items-center overflow-clip "
+      className="md:h-full  r  h-full   mt-4 flex  justify-center   items-center overflow-clip "
       id="home"
     >
-      <div className=" w-full h-[70vh]  max-w-[95rem] relative ">
-        <div className="flex flex-col items-center lg:-mt-16   min-h-[74vh]  ">
+      <div className=" w-full h-full     relative ">
+        <div className="flex flex-col items-center    min-h-[35rem]  ">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}

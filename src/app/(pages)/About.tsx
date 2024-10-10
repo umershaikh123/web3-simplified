@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const About = () => {
   return (
     <div
-      className="h-full md:min-h-[80vh] flex flex-col items-center justify-center overflow-x-clip"
+      className="h-full md:min-h-full  flex flex-col items-center justify-center overflow-x-clip"
       id="about"
     >
       <div className=" w-full h-full max-h-[70rem] flex   items-center flex-col">
