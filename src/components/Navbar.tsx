@@ -17,20 +17,26 @@ const containerVariants = {
 
 const Navbar = () => {
   return (
-    <motion.div
-      initial="hidden"
-      animate="show"
-      variants={containerVariants}
-      className="flex md:px-16 md:space-x-8 space-x-4 items-center w-full md:justify-start justify-center "
-    >
-      <LinkButton text="Home" href="" handleClick={() => scrollTo("home")} />
-      <LinkButton text="About" href="" handleClick={() => scrollTo("about")} />
-      <LinkButton
-        text="Contact"
-        href=""
-        handleClick={() => scrollTo("contact")}
-      />
-    </motion.div>
+    <div className="w-full  flex justify-center">
+      <motion.div
+        initial="hidden"
+        animate="show"
+        variants={containerVariants}
+        className="flex md:px-16 md:space-x-8 space-x-4 items-center w-full md:justify-start justify-center max-w-[100rem] "
+      >
+        <LinkButton text="Home" href="" handleClick={() => scrollTo("home")} />
+        <LinkButton
+          text="About"
+          href=""
+          handleClick={() => scrollTo("about")}
+        />
+        <LinkButton
+          text="Contact"
+          href=""
+          handleClick={() => scrollTo("contact")}
+        />
+      </motion.div>
+    </div>
   )
 }
 
