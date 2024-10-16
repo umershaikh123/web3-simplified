@@ -11,15 +11,17 @@ export default Button
 export const LinkButton = ({
   text,
   href,
+  targetRef,
   handleClick,
 }: {
   text: string
   href: string
+  targetRef: string
   handleClick?: () => void
 }) => {
   return (
     <motion.div variants={linkButtonVariants}>
-      <Link href={href} onClick={handleClick}>
+      <Link href={href} target={targetRef} onClick={handleClick}>
         <button className="bg-[var(--primary)] md:px-10 px-6  rounded-3xl py-2 text-[var(--background)] font-semibold hover:bg-[var(--background)] hover:text-[var(--primary)] border-2 border-[var(--primary)] duration-300 ease-in-out">
           {text}
         </button>

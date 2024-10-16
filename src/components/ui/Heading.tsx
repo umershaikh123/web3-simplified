@@ -15,7 +15,7 @@ const Heading = ({ text, css }: { text: string; css?: string }) => {
   )
 }
 
-export const SubHeading = ({ text }: { text: string }) => {
+export const SubHeading = ({ text,text2,href }: { text: string,text2:string,href:string }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ export const SubHeading = ({ text }: { text: string }) => {
       transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
       className="md:text-4xl text-3xl text-center text-[var(--secondary)] font-normal mt-6"
     >
-      {text}
+      {text} <u><a href={href} target="_blank">{text2}</a></u>
     </motion.div>
   )
 }

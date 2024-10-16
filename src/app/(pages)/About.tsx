@@ -15,7 +15,7 @@ const About = () => {
       <div className=" w-full h-full max-h-[70rem] flex   items-center flex-col">
         <Header
           title="About us"
-          subtitle="Unlocking the Human Side of the Decentralized Web"
+          subtitle=""
         />
 
         <div className="w-full min-[900px]:flex-row flex flex-col">
@@ -50,8 +50,7 @@ const About = () => {
                 Our Mission
               </h1>
               <p className="font-semibold md:text-2xl md:px-16 px-4 text-xl text-center">
-                To reveal the real-world impact and opportunities of Web3 for
-                everyone, regardless of technical expertise.
+                Your 0 to 1 guide to the Decentralised world of Web3
               </p>
             </motion.div>
 

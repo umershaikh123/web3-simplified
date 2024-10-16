@@ -24,15 +24,17 @@ const Navbar = () => {
         variants={containerVariants}
         className="flex md:px-16 md:space-x-8 space-x-4 items-center w-full md:justify-start justify-center max-w-[100rem] "
       >
-        <LinkButton text="Home" href="" handleClick={() => scrollTo("home")} />
+        <LinkButton text="Home" href="" targetRef="" handleClick={() => scrollTo("home")} />
         <LinkButton
           text="About"
           href=""
+          targetRef=""
           handleClick={() => scrollTo("about")}
         />
         <LinkButton
-          text="Contact"
-          href=""
+          text="Blogs"
+          href="https://medium.com/@garimayadav_20887"
+          targetRef="_blank"
           handleClick={() => scrollTo("contact")}
         />
       </motion.div>
