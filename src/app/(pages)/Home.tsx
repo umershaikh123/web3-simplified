@@ -32,7 +32,7 @@ export default function HomePage() {
 
           <Heading text="Web3 Simplified" css="-mt-4" />
 
-          <SubHeading text="It's About People, Not Just Tech" />
+          <SubHeading text="New to Web3, Start" text2="here" href="https://medium.com/@garimayadav_20887"/>
         </div>
 
         <div className="flex justify-between w-full ">
