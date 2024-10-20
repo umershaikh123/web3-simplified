@@ -15,7 +15,15 @@ const Heading = ({ text, css }: { text: string; css?: string }) => {
   )
 }
 
-export const SubHeading = ({ text,text2,href }: { text: string,text2:string,href:string }) => {
+export const SubHeading = ({
+  text,
+  text2,
+  href,
+}: {
+  text: string
+  text2: string
+  href: string
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -23,7 +31,12 @@ export const SubHeading = ({ text,text2,href }: { text: string,text2:string,href
       transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
       className="md:text-4xl text-3xl text-center text-[var(--secondary)] font-normal mt-6"
     >
-      {text} <u><a href={href} target="_blank">{text2}</a></u>
+      {text}{" "}
+      <u>
+        <a href={href} target="_blank">
+          {text2}
+        </a>
+      </u>
     </motion.div>
   )
 }
@@ -36,13 +49,13 @@ export const Header = ({
   subtitle: string
 }) => {
   return (
-    <div className="flex flex-col py-8 w-full justify-center items-center space-y-4 relative">
+    <div className="flex flex-col py-8 w-full justify-center items-center space-y-4 relative ">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeInOut", delay: 0.5 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="absolute top-10 min-[900px]:right-10 min-[900px]:flex hidden"
+        className="absolute top-0 min-[900px]:right-10 min-[900px]:flex hidden"
       >
         <Image src={logo} width={150} height={150} alt="logo" />
       </motion.div>

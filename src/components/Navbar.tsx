@@ -22,9 +22,14 @@ const Navbar = () => {
         initial="hidden"
         animate="show"
         variants={containerVariants}
-        className="flex md:px-16 md:space-x-8 space-x-4 items-center w-full md:justify-start justify-center max-w-[100rem] "
+        className="flex md:px-16 md:space-x-8 space-x-4 items-center w-full md:justify-start justify-center   "
       >
-        <LinkButton text="Home" href="" targetRef="" handleClick={() => scrollTo("home")} />
+        <LinkButton
+          text="Home"
+          href=""
+          targetRef=""
+          handleClick={() => scrollTo("home")}
+        />
         <LinkButton
           text="About"
           href=""

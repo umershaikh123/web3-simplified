@@ -45,7 +45,7 @@ const rightPatternVariants = {
 export const ParabolaAnimation = ({ css }: { css?: string }) => {
   return (
     <div className={`flex flex-col items-center justify-center  h-fit  ${css}`}>
-      <div className=" w-[150px] h-[152px]  bg-[var(--primary)] overflow-y-hidden flex  relative   justify-center ">
+      <div className=" w-[130px] h-[138px]  bg-[var(--primary)] overflow-y-hidden flex  relative   justify-center ">
         <motion.div
           className="flex flex-col items-center justify-center absolute"
           id="left pattern"
@@ -131,7 +131,7 @@ const triangleVariants = {
 export const TriangleAnimation = ({ css }: { css?: string }) => {
   return (
     <div className={`flex flex-col items-center justify-center h-fit ${css}`}>
-      <div className="w-[130px] h-[140px] bg-[#ffc610] overflow-hidden flex relative justify-center">
+      <div className="w-[132px] h-[140px] bg-[#ffc610] overflow-hidden flex relative justify-center">
         <motion.div
           className="absolute top-0 flex flex-col"
           initial="hidden"
